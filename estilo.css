@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: Amazon Ember Regular,Arial,sans-serif;
+    font-size: 16px;
+    background-color: #0e171e;
+    color: #949494;
+}
+
+header {
+    background-color: #1a222d;
+    padding: 15px;
+}
+
+header img {
+    vertical-align: middle;
+    margin-left: 40px;
+}
+
+header nav {
+    margin: 0;
+    display: inline-block;
+}
+
+header form {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 2px;
+    margin-right: 100px;
+}
+
+header form input {
+    padding: 10px;
+    background-color: #1a222d;
+    border: 1px solid #2b3742;
+    color: #ccc;
+    width: 200px;
+    outline: none;
+    font-size: 100%;
+}
+
+aside img {
+    height: 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+aside a {
+    color: #f1f1f1;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer img {
+    margin-left: 40px;
+}
+
+footer a {
+    color: #79B8F3;
+}
+
+footer ul {
+    margin: 0;
+}
+
+main {
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+section h1 {
+    text-align: left;
+    color: #f1f1f1;
+    margin: 0;
+    padding-left: 45px;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+section ul {
+    width: max-content;
+    margin-top: 10px;
+}
+
+section h1 a {
+    color: #79B8F3;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.main-banner {
+    margin-bottom: 20px;
+}
+
+.categories-banner img  {
+    width: 300px;
+    padding: 2px;
+}
