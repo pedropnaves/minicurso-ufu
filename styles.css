@@ -48,6 +48,7 @@ ul {
 }
 
 li {
+    position: relative;
     display: inline-block;
 }
 
@@ -106,7 +107,30 @@ section h1 a {
     margin-bottom: 20px;
 }
 
-.categories-banner img  {
+.movie-img  {
     width: 300px;
     padding: 2px;
+    cursor: pointer;
+}
+
+.movie-img:hover {
+    opacity: 0.2;
+}
+
+.delete-icon {
+    width: 50px;
+    position: absolute;
+    top: 60px;
+    left: 115px;
+    display: none;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.editable-list-element .movie-img {
+    opacity: 0.2;
+}
+
+.editable-list-element .delete-icon {
+    display: inline;
 }
