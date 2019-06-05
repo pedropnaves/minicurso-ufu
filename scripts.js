@@ -80,7 +80,7 @@ function doRequest() {
             setEvents();
         }
     };
-    xhttp.open("GET", "http://www.mocky.io/v2/5cf82ada300000286ca38149");
+    xhttp.open("GET", "http://www.mocky.io/v2/5cf8321a30000059a0a38158");
     xhttp.send();
 }
 
