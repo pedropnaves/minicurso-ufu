@@ -1,0 +1,118 @@
+[
+    {
+        "sectionName": "Best Movies",
+        "movies": [
+            {
+                "imgAlt": "Jhon Travolta no mundo da lua",
+                "imgPath": "assets/movies/bests/1.jpg"
+            },
+            {
+                "imgAlt": "A volta dos que não foram",
+                "imgPath": "assets/movies/bests/2.jpg"
+            },
+            {
+                "imgAlt": "Tranças da vovó careca",
+                "imgPath": "assets/movies/bests/3.jpg"
+            },
+            {
+                "imgAlt": "Quer ser estagiário da ZUP?",
+                "imgPath": "assets/movies/bests/4.jpg"
+            },
+            {
+                "imgAlt": "A volta dos que não foram",
+                "imgPath": "assets/movies/bests/5.jpg"
+            },
+            {
+                "imgAlt": "A volta dos que não foram 2",
+                "imgPath": "assets/movies/bests/6.jpg"
+            }
+        ]
+    },
+    {
+        "sectionName": "Drama",
+        "movies": [
+            {
+                "imgAlt": "Meu dente caiu",
+                "imgPath": "assets/movies/drama/1.jpg"
+            },
+            {
+                "imgAlt": "Que tal trabalhar na ZUP?",
+                "imgPath": "assets/movies/drama/2.jpg"
+            },
+            {
+                "imgAlt": "Tranças da vovó careca",
+                "imgPath": "assets/movies/drama/3.jpg"
+            },
+            {
+                "imgAlt": "Poeira em alto mar",
+                "imgPath": "assets/movies/drama/4.jpg"
+            },
+            {
+                "imgAlt": "A volta dos que não foram",
+                "imgPath": "assets/movies/drama/5.jpg"
+            },
+            {
+                "imgAlt": "A volta dos que não foram 2",
+                "imgPath": "assets/movies/drama/6.jpg"
+            }
+        ]
+    },
+    {
+        "sectionName": "Original",
+        "movies": [
+            {
+                "imgAlt": "Copa do mundo feminino",
+                "imgPath": "assets/movies/original/1.jpg"
+            },
+            {
+                "imgAlt": "Ronaldo feênomeno",
+                "imgPath": "assets/movies/original/2.jpg"
+            },
+            {
+                "imgAlt": "Pelé maior que Maradona",
+                "imgPath": "assets/movies/original/3.jpg"
+            },
+            {
+                "imgAlt": "Quer ser estagiário de FRONT na ZUP?",
+                "imgPath": "assets/movies/original/4.jpg"
+            },
+            {
+                "imgAlt": "GO ZUP!",
+                "imgPath": "assets/movies/original/5.jpg"
+            },
+            {
+                "imgAlt": "GO ZUP!",
+                "imgPath": "assets/movies/original/6.jpg"
+            }
+        ]
+    },
+    {
+        "sectionName": "Recent",
+        "movies": [
+            {
+                "imgAlt": "Dota melhor que LOL",
+                "imgPath": "assets/movies/recent/1.jpg"
+            },
+            {
+                "imgAlt": "Minicurso show",
+                "imgPath": "assets/movies/recent/2.jpg"
+            },
+            {
+                "imgAlt": "Este é um filme recem adicionado",
+                "imgPath": "assets/movies/recent/3.jpg"
+            },
+            {
+                "imgAlt": "Meu filme recente",
+                "imgPath": "assets/movies/recent/4.jpg"
+            },
+            {
+                "imgAlt": "Prefere ser Backend? Temos vagas também!",
+                "imgPath": "assets/movies/recent/5.jpg"
+            },
+            {
+                "imgAlt": "Prefere ser Backend? Temos vagas também!",
+                "imgPath": "assets/movies/recent/6.jpg"
+            }
+        ]
+    }
+]
