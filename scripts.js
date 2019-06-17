@@ -1,8 +1,12 @@
 var appConstants = {
     editableImageClass: 'editable-list-element',
     movieImageClass: 'movie-list-element',
-    editAnchorClass: 'edit-anchor'
+    editAnchorClass: 'edit-anchor',
+    searchElementID: 'search',
+    moviesSection: 'movies-section'
 }
+
+var dataResponse = [];
 
 function toggleImageListEditView(imageElement) {
     if (imageElement.classList.contains(appConstants.editableImageClass)) {
@@ -29,8 +33,31 @@ function setOnEditMoviesEvent() {
     }
 }
 
+function filterMovies(movie) {
+    var inputSearchElement = document.getElementById(appConstants.searchElementID);
+    var inputSearchValue = inputSearchElement.value;
+    return movie.name.toUpperCase().includes(inputSearchValue.toUpperCase())
+}
+
+function filterSection(section) {
+    section.movies = section.movies.filter(filterMovies);
+    return section.movies.length
+}
+
+function onFilterMovies() {
+    var dataResponseFilter = JSON.parse(JSON.stringify(dataResponse));
+    dataResponseFilter = dataResponseFilter.filter(filterSection);
+    renderSections(dataResponseFilter);
+}
+
+function setOnFilterMovies(){
+    var searchElement = document.getElementById(appConstants.searchElementID);
+    searchElement.addEventListener('keyup', onFilterMovies);
+}
+
 function setEvents() {
-    setOnEditMoviesEvent()
+    setOnEditMoviesEvent();
+    setOnFilterMovies();
 }
 
 function deleteElementFromDOM(event) {
@@ -58,11 +85,12 @@ function renderMovies (listMovies) {
 }
 
 function renderSections (listSection) {
+    var sectionMovies = document.getElementById(appConstants.moviesSection);
+    sectionMovies.innerText = '';
     if(listSection && listSection.length > 0){
-        var mainElement = document.getElementsByTagName("main");
 
         for(var i=0; i<listSection.length; i++) {
-            mainElement[0].insertAdjacentHTML('beforeend',
+            sectionMovies.insertAdjacentHTML('beforeend',
                 "<section class=\"categories-banner\">" +
                 "<h1>"+listSection[i].sectionName+" <a class=\"edit-anchor\" href=\"#\">Edit</a></h1>" +
                 "<ul>"+renderMovies(listSection[i].movies)+"</ul>" +
@@ -76,11 +104,12 @@ function doRequest() {
     xhttp.onreadystatechange = function() {
         if (this.readyState === 4 && this.status === 200) {
             var response = processRequest(this.responseText);
-            renderSections(response);
+            dataResponse = response;
+            renderSections(dataResponse);
             setEvents();
         }
     };
-    xhttp.open("GET", "http://www.mocky.io/v2/5cf8321a30000059a0a38158");
+    xhttp.open("GET", "https://baratododiacrawler.herokuapp.com");
     xhttp.send();
 }
 
